@@ -6,7 +6,7 @@ export interface TodoType {
 export interface InitialStateType {
     isLoading:boolean;
     isError:boolean;
-    todos:TodoType[];
+    todos:TodoType[] | [];
     username?: string
 }
 
@@ -14,3 +14,7 @@ export type ReducerType = {
     type: string;
     payload?: string | undefined;
   };
+
+  export type State={
+    todoReducer: InitialStateType
+  }

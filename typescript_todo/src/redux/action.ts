@@ -26,7 +26,7 @@ export const postTodoAction =
     return axios
       .post("http://localhost:8080/todos", todos)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         dispatch({ type: types.POST_TODO_SUCCESS, payload: res.data });
       })
       .catch((err) => {

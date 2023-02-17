@@ -17,7 +17,7 @@ import {
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   
   const rootReducer = combineReducers({
-    TodoReducer
+   todoReducer: TodoReducer
   });
   
   export const store = legacy_createStore(

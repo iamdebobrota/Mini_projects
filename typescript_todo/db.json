@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "todo": "json-server",
+      "status": false
+    },
+    {
+      "id": 1676661145411,
+      "todo": "as",
+      "isDone": false
+    },
+    {
+      "id": 1676661150230,
+      "todo": "asa",
+      "isDone": false
+    },
+    {
+      "id": 1676661158410,
+      "todo": "asa",
+      "isDone": false
+    },
+    {
+      "id": 1676661160111,
+      "todo": "as",
+      "isDone": false
+    },
+    {
+      "id": 1676661263878,
+      "todo": "sds",
+      "isDone": false
+    },
+    {
+      "id": 1676661334832,
+      "todo": "asa",
+      "isDone": false
+    }
+  ]
+}
