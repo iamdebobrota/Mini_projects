@@ -1,0 +1,16 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  /* border: 8px solid green; */
+  height: 90%;
+  width: 80%;
+}
+.main{
+
+}
+.rec{
+  border: 2px solid red;
+ padding: 8%;
+  /* width: 70%; */
+ 
+}
