@@ -1,0 +1,40 @@
+.main {
+  width: 75%;
+  margin: auto;
+}
+.search {
+  width: 90%;
+  padding: 8px;
+}
+.table {
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.table_head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid red;
+}
+.pagination {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 10px;
+}
+.pagination button{
+    background-color: teal;
+padding: 5px;
+padding-bottom: 1px;
+    color: white;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
