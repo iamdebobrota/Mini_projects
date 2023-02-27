@@ -2,14 +2,18 @@ import React, { useEffect, useState } from "react";
 import { deleteData } from "./Api";
 import style from "./Styles.module.css";
 
-const Table = ({ data, handleDelete, handleEditDone, multipleDelete, handleGetData }) => {
+const Table = ({
+  data,
+  handleDelete,
+  handleEditDone,
+  multipleDelete,
+  handleGetData,
+}) => {
   const [editableId, seteditableId] = useState(null);
   const [edit, setedit] = useState({});
   const [checked, setchecked] = useState(false);
-  //data.find((e)=> e.id===editableId)
   const [temp, settemp] = useState([]);
 
-  
   useEffect(() => {
     editableId && setedit(data.find((e) => e.id === editableId));
   }, [editableId]);
@@ -40,15 +44,12 @@ const Table = ({ data, handleDelete, handleEditDone, multipleDelete, handleGetDa
       }
       return user;
     });
-    // handleSelectDelete()
   };
   // console.log(temp)
   const handleSelectDelete = (e) => {
     for (let i = 0; i < temp.length; i++) {
-    deleteData(temp[i].id).then((res)=> handleGetData())
+      deleteData(temp[i].id).then((res) => handleGetData());
     }
-   
-    // settemp([])
   };
 
   return (
@@ -88,7 +89,6 @@ const Table = ({ data, handleDelete, handleEditDone, multipleDelete, handleGetDa
                       className="seleted"
                       checked={el.selected}
                       onChange={(e) => ClickHighlight(e, el)}
-                      // onChange={(e) => handleSelect(e, el.id)}
                     />
                   </td>
                   <td>
@@ -133,7 +133,7 @@ const Table = ({ data, handleDelete, handleEditDone, multipleDelete, handleGetDa
             );
           })}
       </table>
-      <button onClick={()=>handleSelectDelete()}>Delete</button>
+      <button onClick={() => handleSelectDelete()}>Delete</button>
     </div>
   );
 };

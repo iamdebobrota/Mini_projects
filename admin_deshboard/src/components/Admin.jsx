@@ -28,7 +28,7 @@ const Admin = () => {
   useEffect(() => {
     handleGetData();
   }, []);
-// Post data
+  // Post data
   const handleSubmit = (formData) => {
     PostData(formData).then((res) => handleGetData());
   };
@@ -45,20 +45,12 @@ const Admin = () => {
     deleteData(id).then((res) => handleGetData());
   };
 
-  const  multipleDelete=(payload)=>{
-    console.log(payload)
-    // deleteData(payload);
-
-  }
+  const multipleDelete = (payload) => {
+    console.log(payload);
+  };
   const handleEditDone = (id, payload) => {
     EditData(id, payload).then((res) => handleGetData());
   };
-  // const handleEdit = (id) => {
-  //   let newArr = data.map((el) => el.id === id);
-  // // setData(newArr);
-  // // console.log(newArr);
-  // };
-
   if (loading) {
     return <h1>Loading.....</h1>;
   }
@@ -77,7 +69,7 @@ const Admin = () => {
   // };
 
   // hello world
-  
+
   return (
     <div>
       <AddData handleSubmit={handleSubmit} />
@@ -103,7 +95,6 @@ const Admin = () => {
           // totalPage={search(data).length}
           paginate={(prev) => setPage(prev)}
         />
-       
       </div>
     </div>
   );
