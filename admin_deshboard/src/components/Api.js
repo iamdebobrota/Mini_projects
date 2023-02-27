@@ -14,6 +14,7 @@ export const searchData = async (query) => {
   }
 };
 export const deleteData = async (id) => {
+  console.log(id)
   try {
     const res = await fetch(`http://localhost:8080/member/${id}`, {
       method: "DELETE",

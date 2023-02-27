@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
+import { deleteData } from "./Api";
 import style from "./Styles.module.css";
 
-const Table = ({ data, handleDelete, handleEditDone, multipleDelete }) => {
+const Table = ({ data, handleDelete, handleEditDone, multipleDelete, handleGetData }) => {
   const [editableId, seteditableId] = useState(null);
   const [edit, setedit] = useState({});
   const [checked, setchecked] = useState(false);
   //data.find((e)=> e.id===editableId)
-  const [temp, settemp] = useState([])
+  const [temp, settemp] = useState([]);
 
+  
   useEffect(() => {
     editableId && setedit(data.find((e) => e.id === editableId));
   }, [editableId]);
@@ -31,16 +33,23 @@ const Table = ({ data, handleDelete, handleEditDone, multipleDelete }) => {
   };
 
   const ClickHighlight = (e, el) => {
-   data.filter((user)=> {
-      if(user.id===el.id){
-        user.selected=e.target.checked;
-        settemp([...temp, user])
+    data.filter((user) => {
+      if (user.id === el.id) {
+        user.selected = e.target.checked;
+        settemp([...temp, user]);
       }
-      return user
-    })
-    multipleDelete(temp)
+      return user;
+    });
+    // handleSelectDelete()
   };
   // console.log(temp)
+  const handleSelectDelete = (e) => {
+    for (let i = 0; i < temp.length; i++) {
+    deleteData(temp[i].id).then((res)=> handleGetData())
+    }
+   
+    // settemp([])
+  };
 
   return (
     <div>
@@ -69,8 +78,9 @@ const Table = ({ data, handleDelete, handleEditDone, multipleDelete }) => {
             return (
               <tbody key={el.id}>
                 <tr
-                 style={checked || el.selected? { backgroundColor: "yellow" } : {}}
-                >
+                  style={
+                    checked || el.selected ? { backgroundColor: "yellow" } : {}
+                  }>
                   <td>
                     <input
                       type="checkbox"
@@ -123,6 +133,7 @@ const Table = ({ data, handleDelete, handleEditDone, multipleDelete }) => {
             );
           })}
       </table>
+      <button onClick={()=>handleSelectDelete()}>Delete</button>
     </div>
   );
 };

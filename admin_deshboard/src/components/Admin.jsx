@@ -44,9 +44,12 @@ const Admin = () => {
     // or
     deleteData(id).then((res) => handleGetData());
   };
-  const handleSelectDelete = () => {
 
-  };
+  const  multipleDelete=(payload)=>{
+    console.log(payload)
+    // deleteData(payload);
+
+  }
   const handleEditDone = (id, payload) => {
     EditData(id, payload).then((res) => handleGetData());
   };
@@ -72,9 +75,8 @@ const Admin = () => {
 
   //   return a;
   // };
-const multipleDelete=(temp)=>{
-console.log(temp)
-}
+
+  // hello world
   
   return (
     <div>
@@ -92,6 +94,7 @@ console.log(temp)
           handleDelete={handleDelete}
           handleEditDone={handleEditDone}
           multipleDelete={multipleDelete}
+          handleGetData={handleGetData}
         />
         <Pagination
           postsPerPage={postsPerPage}
@@ -100,7 +103,7 @@ console.log(temp)
           // totalPage={search(data).length}
           paginate={(prev) => setPage(prev)}
         />
-        <button onClick={handleSelectDelete}>Delete</button>
+       
       </div>
     </div>
   );
