@@ -1,0 +1,23 @@
+.main {
+  padding: 0px 50px 0 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(61, 214, 107, 0.87);
+  color: crimson;
+  align-items: center;
+  font-size: 22px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 22px;
+}
+.active {
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+  border-bottom: 3px solid crimson;
+  transition: border-bottom 0.5s ease-in-out;
+}

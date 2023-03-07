@@ -1,0 +1,40 @@
+{
+  "EmployesData": [
+    {
+      "name": "Debu haldar",
+      "age": "22",
+      "designation": "Frontend Developer",
+      "id": 1
+    },
+    {
+      "name": "Test",
+      "age": "5",
+      "designation": "Developers",
+      "id": 2
+    },
+    {
+      "name": "Test 2",
+      "age": "6",
+      "designation": "Node Js Developer",
+      "id": 3
+    },
+    {
+      "name": "Test 1",
+      "age": "24",
+      "designation": "Android Developer",
+      "id": 4
+    },
+    {
+      "name": "UI",
+      "age": "30",
+      "designation": "ui developer",
+      "id": 5
+    },
+    {
+      "name": "Amazing",
+      "age": "40",
+      "designation": "Creative Developers",
+      "id": 6
+    }
+  ]
+}
