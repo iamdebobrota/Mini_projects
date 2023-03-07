@@ -2,13 +2,13 @@
 A simple to-do list app powered by React, Chakra UI, React icons. 
 Save in Local Storage
 
-##### [Live Demo](https://todo-app.erfjs.com/) on Vercel
+##### [Live Demo](https://resonant-marshmallow-00cec6.netlify.app/) on Vercel
 
 
 
 
 <p align="center">
-  <a src="https://todo-app.erfjs.com/" target="_blank"><img src="./readme/example.png" width="100%" height="auto" /></a>
+  <a src="https://resonant-marshmallow-00cec6.netlify.app/" target="_blank"><img src="./readme/example.png" width="100%" height="auto" /></a>
 </p>
 
 
