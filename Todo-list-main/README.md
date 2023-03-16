@@ -8,7 +8,7 @@ Save in Local Storage
 
 
 <p align="center">
-  <a src="https://resonant-marshmallow-00cec6.netlify.app/" target="_blank"><img src="./readme/example.png" width="100%" height="auto" /></a>
+  <a src="https://resonant-marshmallow-00cec6.netlify.app/" target="_blank"><img src="./images/example.png" width="100%" height="auto" /></a>
 </p>
 
 

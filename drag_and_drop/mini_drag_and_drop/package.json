@@ -1,5 +1,5 @@
 {
-  "name": "notes_app",
+  "name": "mini_drag_and_drop",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,10 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "netlify-cli": "^13.1.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

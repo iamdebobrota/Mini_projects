@@ -61,42 +61,6 @@
       "role": "admin"
     },
     {
-      "id": "11",
-      "name": "Keshav Muddaiah",
-      "email": "keshav@mailinator.com",
-      "role": "member"
-    },
-    {
-      "id": "12",
-      "name": "Nita Ramesh",
-      "email": "nita@mailinator.com",
-      "role": "member"
-    },
-    {
-      "id": "13",
-      "name": "Julia Hunstman",
-      "email": "julia@mailinator.com",
-      "role": "member"
-    },
-    {
-      "id": "14",
-      "name": "Juan Alonso",
-      "email": "juan@mailinator.com",
-      "role": "admin"
-    },
-    {
-      "id": "15",
-      "name": "Gabriel Montoya",
-      "email": "gabriel@mailinator.com",
-      "role": "admin"
-    },
-    {
-      "id": "16",
-      "name": "Beatrice Iglesias",
-      "email": "beatrice@mailinator.com",
-      "role": "admin"
-    },
-    {
       "id": "17",
       "name": "Sarah Symms",
       "email": "sarah.s@mailinator.com",
