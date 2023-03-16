@@ -9,5 +9,4 @@ typescript todo
 <br>
 todolist: https://resonant-marshmallow-00cec6.netlify.app/
 <br>
-<br>
-notes app= https://debus-notes.netlify.app
+notes app: https://debus-notes.netlify.app
