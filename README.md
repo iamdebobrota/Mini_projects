@@ -7,4 +7,6 @@ Search with json server
 <br>
 typescript todo
 <br>
-todolist main: https://resonant-marshmallow-00cec6.netlify.app/
+todolist: https://resonant-marshmallow-00cec6.netlify.app/
+<br>
+notes app: https://debus-notes.netlify.app
