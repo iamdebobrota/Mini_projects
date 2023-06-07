@@ -3,6 +3,8 @@ import "../styles/notes.css";
 import { MdDelete } from "react-icons/md";
 
 const Notes = (props) => {
+
+  
   let timer = 500,
     timeout;
   const debounce = (func) => {
@@ -12,6 +14,8 @@ const Notes = (props) => {
 const updateText=(text, id)=>{
 debounce(()=> props.updateText(text, id))
 }
+
+
   const formatDate = (value) => {
     const monthsName = [
       "Jan",
@@ -41,7 +45,7 @@ debounce(()=> props.updateText(text, id))
     let month = monthsName[date.getMonth()];
     return `${hrs}:${min} ${amPm} ${day} ${month}`;
   };
-let initialValue="Hello world"
+
   return (
     <div className="note" style={{ backgroundColor: props.note.color }}>
       <textarea className="note_text"  defaultValue={props.note.text} onChange={(e) => updateText(e.target.value, props.note.id)}>
