@@ -1,0 +1,14 @@
+.hoverDelete {
+  visibility: hidden;
+  transition-delay: 2250ms;
+}
+
+.addDelete:hover + .hoverDelete {
+  transition-delay: 2250ms;
+  visibility: visible;
+  color: red;
+  cursor: wait;
+}
+.addDelete {
+  transition-delay: 2250ms;
+}
