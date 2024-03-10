@@ -22,8 +22,8 @@ const Todo: React.FC = () => {
     
     if (todo) {
       dispatch(postTodoAction(obj));
-      setTodosAr([...todos]);
-      console.log(todos)
+      setTodosAr([obj]);
+      console.log(obj)
       setTodo("");
     }
   };
